@@ -1,19 +1,19 @@
 # Learning the basics of Data Structures
 [IN PROGRESS]
 
-- [] Stacks
-- [] Sets
-- [] Queues
-- [] Priority Queues
-- [] Binary Search Tree
-- [] Binary Search Tree: Traversal & Height
+- [ ] Stacks
+- [ ] Sets
+- [ ] Queues
+- [ ] Priority Queues
+- [ ] Binary Search Tree
+- [ ] Binary Search Tree: Traversal & Height
 - [x] HashTables
-- [] Linked List
-- [] Trie
-- [] Heap (max and min)
-- [] Heap Visualization
-- [] Graphs: adjacency list, adjacency matrix, incidence matrix
-- [] Graphs: breadth-first search
+- [ ] Linked List
+- [ ] Trie
+- [ ] Heap (max and min)
+- [ ] Heap Visualization
+- [ ] Graphs: adjacency list, adjacency matrix, incidence matrix
+- [ ] Graphs: breadth-first search
 
 ## References
 
