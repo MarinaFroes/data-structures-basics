@@ -1,7 +1,7 @@
 # Learning the basics of Data Structures
 [IN PROGRESS]
 
-- [ ] Stacks
+- [x] Stacks
 - [ ] Sets
 - [ ] Queues
 - [ ] Priority Queues
