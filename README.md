@@ -3,7 +3,7 @@
 
 - [x] Stacks
 - [ ] Sets
-- [ ] Queues
+- [x] Queues
 - [ ] Priority Queues
 - [ ] Binary Search Tree
 - [ ] Binary Search Tree: Traversal & Height
