@@ -25,3 +25,4 @@ Mainly based on this FreeCodeCamp course:
 - [Data Structures: Hash Tables](https://www.youtube.com/watch?v=shs0KM3wKv8)
 - [10 Common Data Structures Explained with Videos + Exercises](https://www.freecodecamp.org/news/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b/)
 - [The top data structures you should know for your next coding interview](https://www.freecodecamp.org/news/the-top-data-structures-you-should-know-for-your-next-coding-interview-36af0831f5e3/)
+- [Algorithms: Graph Search, DFS and BFS](https://www.youtube.com/watch?v=zaBhtODEL0w&t=379s)
