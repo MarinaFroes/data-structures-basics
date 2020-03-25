@@ -13,7 +13,7 @@
 - [ ] Heap (max and min)
 - [ ] Heap Visualization
 - [ ] Graphs: adjacency list, adjacency matrix, incidence matrix
-- [ ] Graphs: breadth-first search
+- [x] Graphs: breadth-first search
 
 ## References
 
