@@ -1,4 +1,6 @@
-const Queue = function() {
+// Based on the FreeCodeCamp "Data Structures and Algorithms in JavaScript - Full Course for Beginners", available at: https://www.youtube.com/watch?v=t2CEgPsws3U&t=4500s
+
+const Queue = function () {
   const collection = [];
 
   // Logs to the console the collection
