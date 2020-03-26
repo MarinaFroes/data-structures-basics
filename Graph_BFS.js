@@ -22,8 +22,10 @@ function graph_bfs(graph, root) {
   // Keep traversing nodes till there's no more nodes in the queue to traverse
   while (queue.length !== 0) {
     current = queue.shift();
-
+    console.log(`current: ${current}`)
+    // Array corresponding to the current node in the adj matrix
     const curConnected = graph[current];
+    console.log(`curConnected: ${curConnected}`)
     // List of nodes connected to the current node
     const neighboorIdx = [];
 
@@ -36,15 +38,23 @@ function graph_bfs(graph, root) {
         // The 2nd argument is the starting index for the search
       idx = curConnected.indexOf(1, idx + 1)
     }
-
+    console.log(`neighboorIdx: ${neighboorIdx}`)
     // Loop through the connected nodes and get the distances
     for (let j = 0; j < neighboorIdx.length; j++){
-      // If the value of the node is Infinity, the distance hasn't been set yet
+      
+      // If the value of the neighboor node is Infinity, the distance hasn't been set yet. If it isn't, means that we've already checked the distance from that neighboor node to the root
       if (nodesLen[neighboorIdx[j]] === Infinity) {
+        
+        console.log(`nodesLen[current]: ${nodesLen[current]}`);
+        // The distance between the neighboor node and the root is the distance between the current node to the root + 1
         nodesLen[neighboorIdx[j]] = nodesLen[current] + 1;
+        console.log(`nodesLen[neighboorIdx[j]]: ${nodesLen[neighboorIdx[j]]}`);
+        // Add the neighboor to the queue to check it's connections
         queue.push(neighboorIdx[j]);
       }
     }
+    console.log(`distance to root: ${nodesLen[current]}`)
+    console.log('---------------')
   }
 
   return nodesLen;
