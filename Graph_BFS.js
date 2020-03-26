@@ -27,30 +27,30 @@ function graph_bfs(graph, root) {
     const curConnected = graph[current];
     console.log(`curConnected: ${curConnected}`)
     // List of nodes connected to the current node
-    const neighboorIdx = [];
+    const neighbourIdx = [];
 
     // Return the first index which has a 1 value
     let idx = curConnected.indexOf(1); // no node => return -1
 
     while (idx !== -1) {
-      neighboorIdx.push(idx)
+      neighbourIdx.push(idx)
       // Update the idx to the next number 1 found
         // The 2nd argument is the starting index for the search
       idx = curConnected.indexOf(1, idx + 1)
     }
-    console.log(`neighboorIdx: ${neighboorIdx}`)
+    console.log(`neighbourIdx: ${neighbourIdx}`)
     // Loop through the connected nodes and get the distances
-    for (let j = 0; j < neighboorIdx.length; j++){
+    for (let j = 0; j < neighbourIdx.length; j++){
       
-      // If the value of the neighboor node is Infinity, the distance hasn't been set yet. If it isn't, means that we've already checked the distance from that neighboor node to the root
-      if (nodesLen[neighboorIdx[j]] === Infinity) {
+      // If the value of the neighbour node is Infinity, the distance hasn't been set yet. If it isn't, means that we've already checked the distance from that neighbour node to the root
+      if (nodesLen[neighbourIdx[j]] === Infinity) {
         
         console.log(`nodesLen[current]: ${nodesLen[current]}`);
-        // The distance between the neighboor node and the root is the distance between the current node to the root + 1
-        nodesLen[neighboorIdx[j]] = nodesLen[current] + 1;
-        console.log(`nodesLen[neighboorIdx[j]]: ${nodesLen[neighboorIdx[j]]}`);
-        // Add the neighboor to the queue to check it's connections
-        queue.push(neighboorIdx[j]);
+        // The distance between the neighbour node and the root is the distance between the current node to the root + 1
+        nodesLen[neighbourIdx[j]] = nodesLen[current] + 1;
+        console.log(`nodesLen[neighbourIdx[j]]: ${nodesLen[neighbourIdx[j]]}`);
+        // Add the neighbour to the queue to check it's connections
+        queue.push(neighbourIdx[j]);
       }
     }
     console.log(`distance to root: ${nodesLen[current]}`)
