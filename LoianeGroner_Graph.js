@@ -1,7 +1,7 @@
 // Based on the Graph class from 'JavaScript Data Structures and Algorithms - Third Edition' by Loiane Groner 
 // It has some annotations and changes made by me
 
-class Graph {
+export default class Graph {
   constructor(isDirected = false) {
     this.isDirected = isDirected; // indicate if the graph is directed
     this.vertices = []; // store the name of the vertices (nodes)
