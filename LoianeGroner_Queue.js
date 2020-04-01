@@ -22,7 +22,7 @@ class Queue {
 
   // Remove element from the front of the queue
   dequeue() {
-    if (this.isEmpty === true) {
+    if (this.isEmpty()) {
       console.log('is empty')
       return undefined;
     }
@@ -36,7 +36,7 @@ class Queue {
 
   // Return the first element of the queue
   peek() {
-    if (this.isEmpty === true ) {
+    if (this.isEmpty()) {
       return undefined;
     }
 
