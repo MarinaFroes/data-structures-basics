@@ -1,3 +1,5 @@
+// Based on the FreeCodeCamp "Data Structures and Algorithms in JavaScript - Full Course for Beginners", available at: https://www.youtube.com/watch?v=t2CEgPsws3U&t=4500s
+
 //Stack - last in first out
 
 const Stack = function() {
