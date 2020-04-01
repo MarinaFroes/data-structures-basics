@@ -52,6 +52,12 @@ class Queue {
     return this.count;
   }
 
+  clear() {
+    this.count = 0;
+    this.lowestCount = 0;
+    this.items = {};
+  }
+
 }
 
 const myQueue = new Queue();
